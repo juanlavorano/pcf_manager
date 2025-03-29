@@ -1,9 +1,19 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from db import read_all_pcfs, read_pcf, create_pcf
 from models import Pcf, PcfCreate
 from uuid import UUID
 
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"], # Default port used for the frontend app
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/footprints", response_model=Pcf)
 async def create_pcf_endpoint(pcf: PcfCreate) -> Pcf:
