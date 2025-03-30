@@ -15,7 +15,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Data from the backend:</h1>
       <PCFTable pcfs={data} loading={loading} error={error} />
       <CreatePCFForm refetch={refetchPcfs} />
     </div>
