@@ -1,4 +1,4 @@
-# WBCSD Assignment
+# PCF manager
 
 This project contains both the backend (FastAPI) and the frontend (React built with Vite) in a single repository. This README explains how to run the application using different approaches:
 
