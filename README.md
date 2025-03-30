@@ -26,7 +26,7 @@ This is the easiest way to run the entire application.
 1. **Navigate to the root project directory:**
 
 ```bash
-cd wbcsd_assignment
+cd pcf_manager
 ```
 
 2. **Build and run the containers:**
@@ -57,13 +57,13 @@ You can also build and run the backend and frontend separately.
 1. **Navigate to the root directory:**
 
 ```bash
-cd wbcsd_assignment
+cd pcf_manager
 ```
 
 2. **Build the Docker image:**
 
 ```bash
-docker build -f backend/Dockerfile.backend -t backend .
+docker build -f Dockerfile.backend -t backend .
 ```
 
 3. **Run the container:**
@@ -77,7 +77,7 @@ docker run -p 8000:8000 backend
 1. **Build the Docker image:**
 
 ```bash
-docker build -f frontend/Dockerfile.frontend -t frontend .
+docker build -f Dockerfile.frontend -t frontend .
 ```
 
 2. **Run the container:**
